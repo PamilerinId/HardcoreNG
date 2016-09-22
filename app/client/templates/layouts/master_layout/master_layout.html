@@ -1,0 +1,23 @@
+<template name="MasterLayout">
+  <nav class="main-nav-outer" id="test"><!--main-nav-start-->
+	    <div class="container">
+          <ul class="main-nav">
+              <li><a href="#service">Clothings</a></li>
+              <li><a href="#Portfolio">Contact</a></li>
+              <li class="small-logo"><a href="#header"><img src="img/small-logo.png" alt=""></a></li>
+              <li><a href="#client">Graphics Design</a></li>
+              <li><a href="#contact">About</a></li>
+          </ul>
+          <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+       </div>
+   </nav><!--main-nav-end-->
+  <body>
+    {{> yield}}
+  </body>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
+        <span class="copyright">Copyright © 2016 |  Hardcore Brand</span>
+    </div>
+  </footer>
+</template>
